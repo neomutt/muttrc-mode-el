@@ -80,7 +80,7 @@
 
 (require 'man)
 
-(defconst muttrc-mode-version "$Revision$")
+(defconst muttrc-mode-version "$Revision: 1.2 $")
 
 ;;; ------------------------------------------------------------
 ;;; Configurable stuff
