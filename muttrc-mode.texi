@@ -1,0 +1,75 @@
+@c -*- mode: texinfo -*-
+\input texinfo
+
+@c %**start of header
+@setfilename info/muttrc-mode
+@settitle muttrc-mode
+@documentencoding ISO-8859-1
+@c %**end of header
+
+@c This file was trivially adapted from emacs-goodies-el.texi
+@c EDITION 30.2
+@c UPDATED 25 Nov 2009
+@c Copyright: 2000-2003 Roland Mas <lolando@debian.org>,
+@c  2005-2014 Peter S Galbraith <psg@debian.org>
+@c  2014 Julian Gilbey <jdg@debian.org>
+@c License: GPL-2+
+
+@dircategory Emacs
+@direntry
+* mutt-alias: major mode for editing muttrc
+@end direntry
+
+@node Top
+@noindent Author: Laurent Pelecq <laurent.pelecq@soleil.org>
+
+This mode's primarily provides syntax highlighting with font-lock for
+muttrc and /etc/aliases. Basic fontification appears on strings,
+comments, command names, and variables. Additional fontification for
+commands arguments can be enabled through the customization buffer.
+
+To customize it, execute @command{M-x customize-group RET muttrc RET}
+
+By default, help on command/variable is displayed automatically when
+executing a command to modify them. Disable this feature if you have
+problems with.
+
+The main commands are:
+
+@table @samp
+@item C-x c
+muttrc-insert-command
+@item C-x s
+muttrc-set-variable
+@item C-x S
+muttrc-unset-variable
+@end table
+
+Type @key{C-h m} for all key bindings.
+
+@noindent Installation:
+
+Add this lines to your Emacs config:
+  (autoload 'muttrc-mode "muttrc-mode.el"
+  	"Major mode to edit muttrc files" t)
+  (setq auto-mode-alist
+  	    (append '(("muttrc\\'" . muttrc-mode))
+  		    auto-mode-alist))
+
+Install muttrc-mode.el to a directory somewhere in the load-path.  To
+use this mode for other files, like the mail aliases file, add local
+file variables similar to following lines to these files:
+
+  ### Local Variables: ***
+  ### mode: muttrc ***
+  ### End: ***
+
+Alternatively, write an auto-mode-alist rule to activate muttrc-mode
+for FILE_PATTERN (see above example).
+
+@noindent BUGS:
+
+Multi-line commands are not properly handled and can lead to
+unexpected results.
+
+@bye
