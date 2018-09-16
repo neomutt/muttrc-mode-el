@@ -23,16 +23,16 @@
 @node Top
 @noindent Author: Laurent Pelecq <laurent.pelecq@@soleil.org>
 
-This mode's primarily provides syntax highlighting with font-lock for
-muttrc and /etc/aliases. Basic fontification appears on strings,
+This mode primarily provides syntax highlighting for muttrc and
+/etc/aliases. Basic fontification (via font-lock) appears on strings,
 comments, command names, and variables. Additional fontification for
 commands arguments can be enabled through the customization buffer.
 
 To customize it, execute @command{M-x customize-group RET muttrc RET}
 
-By default, help on command/variable is displayed automatically when
-executing a command to modify them. Disable this feature if you have
-problems with.
+By default, help for a command/variable is automatically displayed
+when executing a command that would modify them. This feature can be
+disabled if it causes problems.
 
 The main commands are:
 
