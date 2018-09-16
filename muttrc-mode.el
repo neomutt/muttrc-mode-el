@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2000, 2001, 2002 Laurent Pelecq
 ;; Copyright (C) 2009 Kumar Appaiah
-;;
+
 ;; Author: Laurent Pelecq <laurent.pelecq@soleil.org>
 ;;         Kumar Appaiah <a.kumar@alumni.iitm.ac.in>
 ;; Version: 1.2
