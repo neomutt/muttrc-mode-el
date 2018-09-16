@@ -20,3 +20,8 @@ Add these lines to your Emacs config:
                     auto-mode-alist))
 ```
 Install muttrc-mode.el to a directory somewhere in Emacs' load-path.
+
+#### Limitations:
+
+- Multiline commands are not properly handled and their use can lead
+  to unexpected results.
