@@ -21,7 +21,7 @@
 @end direntry
 
 @node Top
-@noindent Author: Laurent Pelecq <laurent.pelecq@soleil.org>
+@noindent Author: Laurent Pelecq <laurent.pelecq@@soleil.org>
 
 This mode's primarily provides syntax highlighting with font-lock for
 muttrc and /etc/aliases. Basic fontification appears on strings,
