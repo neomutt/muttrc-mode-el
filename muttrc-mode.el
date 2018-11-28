@@ -5,7 +5,7 @@
 
 ;; Author: Laurent Pelecq <laurent.pelecq@soleil.org>
 ;;         Kumar Appaiah <a.kumar@alumni.iitm.ac.in>
-;; Version: 1.2
+;; Version: 1.2.1
 ;; Homepage: https://github.com/neomutt/muttrc-mode-el
 
 ;; This program is free software; you can redistribute it and/or modify
